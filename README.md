@@ -6,7 +6,11 @@
 # 2. 인원 및 주요업무
 총원: 3명(프론트앤드: 1명, 백엔드: 2명)
 
-
+ilhojung0815(me)   -  백엔드, Festival페이지 및 관리자 페이지 파트 Beer, Festival 구축 
+<br>
+xowoony(leader)   -  프론트엔드, Beer페이지, 마이페이지 구축 및 잔이비어 프로젝트 디자인 및 구성 총괄
+<br>
+riverwings   -  백엔드, Community페이지 및 관리자 페이지 파트 Community 구축
 
 # 3. 기술 스택
 
