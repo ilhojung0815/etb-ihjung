@@ -23,6 +23,10 @@
 #### ERD
 ![image](https://user-images.githubusercontent.com/58130791/215377197-ce9a25d5-5fc3-4e57-9640-fb4f902b6cb0.png)
 
+
+#### Structure
+
+
 # 5. 주요기능 및 구현 이미지
 
 # 6. 주요 이슈 및 해결책
