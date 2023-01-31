@@ -20,14 +20,31 @@
 ### Framework: <img height="18px" src="https://img.shields.io/badge/SpringBoot-green"> <img height="18px" src="https://img.shields.io/badge/MyBatis-black">
 ### Devops: <img height="18px" src="https://img.shields.io/badge/GitHub-black"> <img height="18px" src="https://img.shields.io/badge/AWS-orange">
 # 4. 구조 
-#### ERD
-![image](https://user-images.githubusercontent.com/58130791/215377197-ce9a25d5-5fc3-4e57-9640-fb4f902b6cb0.png)
+
+### Structure
+![image](https://user-images.githubusercontent.com/58130791/215668053-02790e1c-d82c-4ac2-aab0-6293657db458.png)
+
+#### Front
+![image](https://user-images.githubusercontent.com/58130791/215668232-4d163192-8232-4f72-adc0-87844b75e635.png)
 
 
-#### Structure
+#### Back
+![image](https://user-images.githubusercontent.com/58130791/215668373-d0d3f725-a779-440c-9eb2-296f17dab06b.png)
+<br><br>
+
+
+
+### ERD
+![image](https://user-images.githubusercontent.com/58130791/215669535-02d67342-3da3-455b-9ca7-89b88826fef6.png)
+
+
+
 
 
 # 5. 주요기능 및 구현 이미지
+<a><b>필자가 담당한 파트 및 기능을 중점적으로 설명 및 이미지 게시</a>
+<br>
+
 
 # 6. 주요 이슈 및 해결책
 
