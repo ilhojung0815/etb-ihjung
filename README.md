@@ -41,10 +41,44 @@
 
 
 
-# 5. 주요기능 및 구현 이미지
-<a><b>필자가 담당한 파트 및 기능을 중점적으로 설명 및 이미지 게시</a>
-<br>
+# 5. 주요기능 설명 및 시연
+### Home
+  ![Home](https://user-images.githubusercontent.com/58130791/215678052-91c93c73-1753-4ef4-8bd8-09ba8049cb02.gif)
+  <br><br><br>
 
+### PRODUCT
+<a><b>Beer</a><br>
+![beer](https://user-images.githubusercontent.com/58130791/215682753-e376eabf-5d8c-4a51-9d76-2a55be7c30a5.gif) 
+  <br>
+  
+  <a><b>Review</a><br>
+![review](https://user-images.githubusercontent.com/58130791/215682785-8d4665fb-362d-499d-8c7b-3da681a9c0d3.gif)
+    <br><br><br>
+
+### COMMUNITY
+![community](https://user-images.githubusercontent.com/58130791/215684752-f41f4a16-21db-4de3-b3e8-1f11a96bf5e2.gif)
+    <br><br><br>
+
+### FESTIVAL
+<a><b>Festival</a><br>
+    ![festival](https://user-images.githubusercontent.com/58130791/215686466-a6155329-d5e0-4c49-b179-dd371faf9285.gif)
+<br><br>
+
+<a><b>Festival-insert</a><br>
+    ![festival_input](https://user-images.githubusercontent.com/58130791/215686681-3172084a-d0ed-4e72-b0e7-d473b3aebdb2.gif)
+<br><br>
+
+  
+<a><b>Festival-modify</a><br>
+![festival_update](https://user-images.githubusercontent.com/58130791/215688591-98b8afa7-249d-477c-b7ff-0d9717d70c1f.gif)
+<br><br>
+   
+
+
+<a><b>Festival-delete</a><br>
+![festival_delete](https://user-images.githubusercontent.com/58130791/215688685-7133ea9d-11d1-4488-a742-86d9efc66f23.gif)
+<br><br><br>
+ 
 
 # 6. 주요 이슈 및 해결책
 
