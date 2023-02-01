@@ -9,9 +9,9 @@
 
 🐻 ilhojung0815(me)   -  백엔드, Festival페이지 및 관리자 페이지 파트 Beer, Festival 구축 
 <br>
-😺 xowoony(leader)   -  프론트엔드, 회원가입, Beer페이지, 마이페이지 구축 및 잔이비어 프로젝트 디자인 및 구성 총괄
+😺 xowoony(leader)   -  프론트엔드, 회원가입, 로그인, Beer페이지, 마이페이지 구축 및 잔이비어 프로젝트 디자인 및 구성 총괄
 <br>
-🐰 riverwings   -  백엔드, Community페이지 및 관리자 페이지 파트 Community 구축
+🐰 riverwings   -  백엔드, Community페이지, Review파트 및 관리자 페이지 파트 Community 구축
 
 # 3. 기술 스택
 ### Backend: <img height="18px" src="https://img.shields.io/badge/Java-blue">
@@ -19,6 +19,7 @@
 ### DB: <img height="18px" src="https://img.shields.io/badge/MariaDB-9cf">
 ### Framework: <img height="18px" src="https://img.shields.io/badge/SpringBoot-green"> <img height="18px" src="https://img.shields.io/badge/MyBatis-black">
 ### Devops: <img height="18px" src="https://img.shields.io/badge/GitHub-black"> <img height="18px" src="https://img.shields.io/badge/AWS-orange">
+### Api & Tool: <img height="18px" src="https://img.shields.io/badge/Kakao-map-yellow"> <img height="18px" src="https://img.shields.io/badge/CKEditor-black">
 # 4. 구조 
 
 ### Structure
