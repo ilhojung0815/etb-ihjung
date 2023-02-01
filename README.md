@@ -19,7 +19,7 @@
 ### DB: <img height="18px" src="https://img.shields.io/badge/MariaDB-9cf">
 ### Framework: <img height="18px" src="https://img.shields.io/badge/SpringBoot-green"> <img height="18px" src="https://img.shields.io/badge/MyBatis-black">
 ### Devops: <img height="18px" src="https://img.shields.io/badge/GitHub-black"> <img height="18px" src="https://img.shields.io/badge/AWS-orange">
-### Api & Tool: <img height="18px" src="https://img.shields.io/badge/Kakao-map-yellow"> <img height="18px" src="https://img.shields.io/badge/CKEditor-black">
+### Api & Tool: <img height="18px" src="https://img.shields.io/badge/Kakaomap-yellow"> <img height="18px" src="https://img.shields.io/badge/CKEditor-blue">
 # 4. 구조 
 
 ### Structure
