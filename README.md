@@ -43,42 +43,64 @@
 
 
 # 5. 주요기능 설명 및 시연
+:books: <a><b>주요 기능 및 본인이 담당한 부분(🐻로 표시)을 설명</a><br><br>
+
 ### Home
+:pencil2: <a><b>잔이비어 접속시 가장 먼저 표시되는 페이지</a><br><br>
   ![Home](https://user-images.githubusercontent.com/58130791/215678052-91c93c73-1753-4ef4-8bd8-09ba8049cb02.gif)
   <br><br><br>
 
 ### PRODUCT
+:pencil2: <a><b>맥주에 대한 정보 및 리뷰를 표시하는 페이지</a><br><br>
 <a><b>Beer</a><br>
 ![beer](https://user-images.githubusercontent.com/58130791/215682753-e376eabf-5d8c-4a51-9d76-2a55be7c30a5.gif) 
-  <br>
+<br><br>
+:pushpin:
+<br><span>맥주에 관한 정보를 확인할 수 있는 페이지로, 국내맥주, 해외맥주로 구분하여 확인이 가능.</span>
+<br><span>각 맥주들을 클릭시 맥주를 확인할 수 있는 페이지로 이동하여 제조사, 용량, 도수, 카테고리 같은 옵션들을 확인가능</span>
+<br><span>아래에는 리뷰를 작성할 수 있는 기능이 존재하며 추천, 별점을 주는 것도 가능</span>
+<br><br><br>
   
-  <a><b>Review</a><br>
+<a><b>Review</a><br>
 ![review](https://user-images.githubusercontent.com/58130791/215682785-8d4665fb-362d-499d-8c7b-3da681a9c0d3.gif)
-    <br><br><br>
+<br><br>
+:pushpin:
+<br><span>모든 맥주들의 리뷰를 확인할 수 있는 페이지,</span>
+<br><span>리뷰작성시 Beer페이지로 리다이렉딩하여 해당하는 맥주를 선택하여 리뷰를 작성</span>
+<br><br><br>
 
 ### COMMUNITY
+:pencil2: <a><b>맥주에 관한 다양한 소통을 나누는 커뮤니티 페이지</a><br><br>
 ![community](https://user-images.githubusercontent.com/58130791/215684752-f41f4a16-21db-4de3-b3e8-1f11a96bf5e2.gif)
-    <br><br><br>
+<br><br>
+:pushpin:
+<br><span>맥주에 대한 자유로운 소통을 나눌 수 있는 자유게시판과 맥주 관련 모임에 관해 소통을 나눌 수 있는 모임게시판이 존재</span>
+<br><br><br>
 
-### FESTIVAL
+### FESTIVAL(🐻)
+:pencil2: <a><b>맥주 축제에 관한 정보 및 리뷰를 확인할 수 있는 페이지</a><br><br>
 <a><b>Festival</a><br>
     ![festival](https://user-images.githubusercontent.com/58130791/215686466-a6155329-d5e0-4c49-b179-dd371faf9285.gif)
 <br><br>
+:pushpin:
+<br><span>관리자 페이지를 통해 등록된 정보 확인, 해당 축제에 관한 리뷰작성, 카카오맵 API를 이용하여 MAP표시 기능등을 구현</span>
+<br><br><br>
 
+:blue_book: <a><br>Festival의 Comment관련 입력, 수정, 삭제</a><br><br>
 <a><b>Festival-insert</a><br>
     ![festival_input](https://user-images.githubusercontent.com/58130791/215686681-3172084a-d0ed-4e72-b0e7-d473b3aebdb2.gif)
-<br><br>
+<br><br><br>
 
   
 <a><b>Festival-modify</a><br>
 ![festival_update](https://user-images.githubusercontent.com/58130791/215688591-98b8afa7-249d-477c-b7ff-0d9717d70c1f.gif)
-<br><br>
+<br><br><br>
    
 
 
 <a><b>Festival-delete</a><br>
 ![festival_delete](https://user-images.githubusercontent.com/58130791/215688685-7133ea9d-11d1-4488-a742-86d9efc66f23.gif)
-<br><br><br>
+<br><br><br><br>
  
 
 # 6. 주요 이슈 및 해결책
