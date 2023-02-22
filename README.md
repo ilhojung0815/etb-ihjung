@@ -101,6 +101,29 @@
 <a><b>Festival-delete</a><br>
 ![festival_delete](https://user-images.githubusercontent.com/58130791/215688685-7133ea9d-11d1-4488-a742-86d9efc66f23.gif)
 <br><br><br><br>
+
+
+### ADMIN (FESTIVAL & BEER)(🐻)
+:pencil2: <a><b>관리자 페이지</a><br><br>
+<a><b>Admin(Festival)</a><br>
+    ![admin_festival](https://user-images.githubusercontent.com/58130791/220704496-0e22dd1a-3427-41d4-9ab4-9a9adba62979.gif)
+<br><br>
+:pushpin:
+<br><span>맥주 축제 등록,수정,삭제 등 작업을 하기 위한 관리자페이지</span>
+<br><br><br>
+
+:blue_book: <a><br>맥주 축제 등록,수정,삭제</a><br><br>
+<a><b>Admin(Festival-insert)</a><br>
+    ![festival_input](https://user-images.githubusercontent.com/58130791/220705030-9005f83c-a92c-4a85-807d-054de4a1b2b1.gif)
+<br><br><br>
+
+  
+<a><b>Admin(Festival-modify & Festival-delete)</a><br>
+![festival_modify](https://user-images.githubusercontent.com/58130791/220705323-b5cb89f1-cd42-4ba5-bd62-dd0ae2b0c8a5.gif)
+<br><br><br>
+   
+![festival_delete](https://user-images.githubusercontent.com/58130791/220705378-7bef17a1-3c89-4105-aa0f-607c5460ef99.gif)
+<br><br><br><br>
  
 
 # 6. 주요 이슈 및 해결책
