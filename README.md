@@ -176,7 +176,7 @@
  
 2. 관리자페이지(admin)에서 이미지를 서버로 업로드 하는 과정에서 오류가 발생, 확인한 결과 Front단과 Back단에서 이미지를 주고받을 때 Front에서는 하나의 파일만 전송하도록 되어있었으나 Back에서는 MultipartFile[] 같은 배열형태로 타입형태가 일치하지 않아 발생한 오류였다. 
 	
-<br>이를 수정한 뒤 RequestParm의 value명과 entity 변수명이 동일한 것을 발견한 다음 다시 수정하였고, 이미지가 정상적으로 업로드 되었다.
+이를 수정한 뒤 RequestParm의 value명과 entity 변수명이 동일한 것을 발견한 다음 다시 수정하였고, 이미지가 정상적으로 업로드 되었다.
 
   <br><br>
 
@@ -186,7 +186,7 @@
 
 🐛 관리자아이디로 접속 시 Festival 관련 댓글을 수정 및 삭제할 수 있게 하였으나 기능이 정상적으로 작동하지 않음.
 
-💡 먼저 초기에는 수정, 삭제에 관리자 권한을 부여하는 구문을 "session.user != null && session.user.getEmail().equals(festivalComment.getUserEmail()) || session.user.getEmail().equals(관리자ID)" 라고 생각을 하였으나, 로그인시 페이지에서 기능이 정상적으로 작동하였으나 로그인을 하지 않고 접근시 페이지에서 오류가 발생하였다.
+💡 먼저 초기에는 수정, 삭제에 관리자 권한을 부여하는 구문을 "session.user != null && session.user.getEmail().equals(festivalComment.getUserEmail()) ||session.user.getEmail().equals(관리자ID)" 라고 생각을 하였으나, 로그인시 페이지에서 기능이 정상적으로 작동하였으나 로그인을 하지 않고 접근시 페이지에서 오류가 발생하였다.
 문제해결책을 찾는 중 팀원의 조언에 따라 session.user != null을 하나 더 추가를 하였더니 정상적으로 작동하였다.<br>
 	
    오류의 원인을 분석해본 결과 session.user.getEmail.equals(관리자ID)의 반환값에서 발생한 문제였었다. 기존 참, 거짓을 확인하기 위해서는 0, 그 이외의 수로 참, 거짓을 판별하나,
@@ -194,8 +194,6 @@
 
    다른 이메일로 접속시에는 '1 || null'이 되어 참이 되어 실행이 되었으나, 접속하지 않을 시 '0 || null'이 수행이 되어 실행이 되지 않았던 것이다.
    이를 "session.user.getEmail().equals(관리자ID)"비교문에 session.user != null을 하나 더 추가 해주면서, `1 || 0` `0 || 0` 같은 로직이 되면서 오류도 해결하고 기능도 정상적으로 작동하였다.
-
-	<br><br>
 
 
 🔍 Git, Github 연동과정 혼선 문제
@@ -206,5 +204,5 @@
    이에 대해 팀원들과 상의 후 각각 담당하는 작업물을 정한 뒤 작업 후 다음 작업으로 넘어갈 시 이에 대해 통보하여 충돌을 최소한으로 방지하고 함.
    추후 commit관련 충둘은 발생하지 않음
 
-	<br><br>
+
 # 7. 마치며
