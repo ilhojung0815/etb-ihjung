@@ -124,8 +124,87 @@
    
 ![festival_delete](https://user-images.githubusercontent.com/58130791/220705378-7bef17a1-3c89-4105-aa0f-607c5460ef99.gif)
 <br><br><br><br>
+  
+  
+ <a><b>Admin(Beer)</a><br>
+   ![admin_beer](https://user-images.githubusercontent.com/58130791/220706457-f35a8a6f-45dd-41fe-84dc-664271a7d89b.gif)
+<br><br>
+:pushpin:
+<br><span>맥주에 대한 정보를 등록,수정,삭제 등 작업을 하기 위한 관리자페이지</span>
+<br><br><br>
+
+:blue_book: <a><br>맥주 축제 등록,수정,삭제</a><br><br>
+<a><b>Admin(Beer-insert)</a><br>
+    ![beer_input](https://user-images.githubusercontent.com/58130791/220706741-a8481e6f-4705-45ed-96f6-62ee5e874cd0.gif)
+<br><br><br>
+
+  
+<a><b>Admin(Beer-modify & Beer-delete)</a><br>
+![beer_modify delete](https://user-images.githubusercontent.com/58130791/220706571-9c12c756-d327-42bd-bc33-fa2297dad9a3.gif)
+<br><br><br><br>
  
 
 # 6. 주요 이슈 및 해결책
+  
+🔍 modify form태그 오류
+
+🐛 댓글 수정에 관한 작업을 진행하는 중 수정클릭시 작동이 제대로 되지 않은 오류 발생
+   
+
+💡 한페이지에서 입력과 수정에 관한 submit이 2개가 존재하여 발생하였으며,
+    action을 다른 위치로 지정하여 수정을 하는 방식을 채택 (그림), 방식 수정 후 정상 작동
+
+
+
+🔍 이미지 송수신 문제(festival, festivalAdminFestivalWrite)
+
+🐛 이미지가 정상적으로 송수신이 되지 않은 오류 발생
+   
+
+💡 
+
+1. festival 페이지에 서버단의 데이터들을 가져오던 중 다른 데이터들은 성공적으로 수신 되었으나, 
+   image는 정상적으로 페이지에 표기되지 않았는데 이에 대한 몇 가지 원인을 발견하였다.
+
+        (1). image entity를 지정하지 않고 festival article entity 하나만을 이용하여 이미지를 불러오려 하였다
+
+        (2). image entity를 지정 후 이미지는 출력이 되었으나, 하나의 이미지만 중복해서 출력이 되었는데,
+	 이는 index 없이 이미지를 출력하였기에 가장 먼저 출력된 이미지만 중복해서 나오게 되었다. 
+
+        (3). 즉 다시 말하면, festivalArticle과 image 사이의 연결점이 하나도 없었기에 발생한 문제였으며,
+	 이를 확인하고 image에 index라는 연결점을 추가한 결과 해당 문제가 해결하였다.
+
+  <br><br><br>
+ 
+2. 관리자페이지(admin)에서 이미지를 서버로 업로드 하는 과정에서 오류가 발생, 확인한 결과 Front단과 Back단에서 이미지를 주고받을 때 Front에서는 하나의 파일만 전송하도록 되어있었으나
+   Back에서는 MultipartFile[] 같은 배열형태로 타입형태가 일치하지 않아 발생한 오류였다. 이를 수정한 뒤 RequestParm의 value명과 entity 변수명이 동일한 것을 발견한 다음 다시 수정하였고, 이미지가 정상적으로 업로드 되었다.
+
+  <br><br><br>
+
+
+
+🔍 관리자 권한시 댓글 수정 삭제 관련(festivalRead)
+
+🐛 관리자아이디로 접속 시 Festival 관련 댓글을 수정 및 삭제할 수 있게 하였으나 기능이 정상적으로 작동하지 않음.
+
+💡 먼저 초기에는 수정, 삭제에 관리자 권한을 부여하는 구문을 "session.user != null && session.user.getEmail().equals(festivalComment.getUserEmail()) || session.user.getEmail().equals(관리자ID)" 라고 생각을 하였으나, 
+   로그인시 페이지에서 기능이 정상적으로 작동하였으나 로그인을 하지 않고 접근시 페이지에서 오류가 발생하였다.
+
+   팀원의 조언에 따라 session.user != null을 하나 더 추가를 하였더니 정상적으로 작동하였다.
+   오류의 원인을 분석해본 결과 session.user.getEmail.equals(관리자ID)의 반환값에서 발생한 문제였었다. 기존 참, 거짓을 확인하기 위해서는 0, 그 이외의 수로 참, 거짓을 판별하나,
+   session.user.getEmail.equals()에서 어떠한 ID도 접속이 되지 않았을 시 null값이 반환이 되어서 발생한문제였다. 
+
+   다른 이메일로 접속시에는 '1 || null'이 되어 참이 되어 실행이 되었으나, 접속하지 않을 시 '0 || null'이 수행이 되어 실행이 되지 않았던 것이다.
+   이를 "session.user.getEmail().equals(관리자ID)"비교문에 session.user != null을 하나 더 추가 해주면서, `1 || 0` `0 || 0` 같은 로직이 되면서 오류도 해결하고 기능도 정상적으로 작동하였다.
+
+
+
+🔍 Git, Github 연동과정 혼선 문제
+
+🐛 Github를 팀원들과 같이 사용할 때 commit에서 충돌이 발생
+
+💡 확인 해 본 결과 동일 Controller를 동시에 작업한 결과 오류가 발생하였다. 
+   이에 대해 팀원들과 상의 후 각각 담당하는 작업물을 정한 뒤 작업 후 다음 작업으로 넘어갈 시 이에 대해 통보하여 충돌을 최소한으로 방지하고 함.
+   추후 commit관련 충둘은 발생하지 않음
 
 # 7. 마치며
